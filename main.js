@@ -40,3 +40,30 @@
 // person.email = " john@gmail.com";
 
 // console.log( person)
+const toDo = [
+    {
+        id: 1,
+        text: 'Take out trash',
+        isCompleted: true,
+        },
+    {
+        id: 2,
+        text: 'Clean litter box',
+        isCompleted: false,
+        },
+     {
+        id: 3,
+        text: 'make bed',
+        isCompleted: false,
+     }
+];
+
+// console.log(toDo[1].text)
+
+// const todoJSON = JSON.stringify(toDo);
+// console.log(todoJSON)
+
+//loop classic
+for (let i = 0; i < 10; i ++){
+    console.log(i)
+}

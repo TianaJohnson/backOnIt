@@ -54,7 +54,7 @@ const toDos = [
      {
         id: 3,
         text: 'make bed',
-        isCompleted: false,
+        isCompleted: true,
      }
 ];
 
@@ -75,8 +75,38 @@ const toDos = [
 //     i ++    // remember to increment by 1 or else you you will be in an infinite loop
 // }
 
-//best loop!
-for( let todo of toDos){
-    console.log(todo.text);
+//better loop!
+// for( let todo of toDos){
+//     console.log(todo.text);
 
-}
+// }
+
+//high order arrays
+
+// forEach
+// toDos.forEach(function(todo){
+//     console.log(todo.text)
+// })
+
+//map
+// const todoText= toDos.map(function(todo){
+//     return todo.text;
+// });
+// console.log(todoText)
+
+//filter
+const todoCompleted= toDos.filter(function(todo){
+    return todo.isCompleted === true;
+}).map(function(todo) {
+    return todo.text;
+})
+console.log(todoCompleted);
+
+
+
+
+
+
+
+
+

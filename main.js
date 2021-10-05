@@ -40,7 +40,7 @@
 // person.email = " john@gmail.com";
 
 // console.log( person)
-const toDo = [
+const toDos = [
     {
         id: 1,
         text: 'Take out trash',
@@ -58,19 +58,25 @@ const toDo = [
      }
 ];
 
-// console.log(toDo[1].text)
+// console.log(toDos[1].text)
 
-// const todoJSON = JSON.stringify(toDo);
+// const todoJSON = JSON.stringify(toDos);
 // console.log(todoJSON)
 
 //loop classic
-for (let i = 0; i < 10; i ++){
-    console.log(i)
-}
+// for (let i = 0; i < toDos.length; i ++){
+//     console.log(toDos[i].text)
+// }
 
 // //while
-let i = 0;
-while( i< 10){
-    console.log(`while loop ${i}`);
-    i ++    // remember to increment by 1 or else you you will be in an infinite loop
+// let i = 0;
+// while( i< 10){
+//     console.log(`while loop ${i}`);
+//     i ++    // remember to increment by 1 or else you you will be in an infinite loop
+// }
+
+//best loop!
+for( let todo of toDos){
+    console.log(todo.text);
+
 }

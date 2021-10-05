@@ -67,3 +67,10 @@ const toDo = [
 for (let i = 0; i < 10; i ++){
     console.log(i)
 }
+
+// //while
+let i = 0;
+while( i< 10){
+    console.log(`while loop ${i}`);
+    i ++    // remember to increment by 1 or else you you will be in an infinite loop
+}

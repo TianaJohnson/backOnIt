@@ -147,29 +147,56 @@
 //object oriented programing 
 // Constructor function
 
-function Person(firstName, lastName, dob){
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.dob = new Date(dob);
+// function Person(firstName, lastName, dob){
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.dob = new Date(dob);
 
 
-};
+// };
 
-Person.prototype.getBirthYear = function() {
-    return this.dob.getFullYear();
-}
-Person.prototype.getFullName = function() {
-    return `${this.firstName} ${this.lastName}`
-}
+// Person.prototype.getBirthYear = function() {
+//     return this.dob.getFullYear();
+// }
+// Person.prototype.getFullName = function() {
+//     return `${this.firstName} ${this.lastName}`
+// }
+
+//class methods
+// class Person {
+//     constructor (firstName, lastName, dob) {
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.dob = new Date(dob);
+//     }
+//     getBirthYear(){
+//         return this.dob.getFullYear();
+//     }
+//     getFullName(){
+//         return `${this.firstName} ${this.lastName}`
+//     }
+// }
 
 
-// Instantiate object
-const person1 = new Person('John', 'Doe', '07/08/1986');
-const person2 = new Person('Paul', 'Ridge', '6/6/2020');
+// // Instantiate object
+// const person1 = new Person('John', 'Doe', '07/08/1986');
+// const person2 = new Person('Paul', 'Ridge', '6/6/2020');
 
-console.log(person1.getBirthYear());
-console.log(person2.getFullName());
-console.log(person1);
+// console.log(person1.getBirthYear());
+// console.log(person2.getFullName());
+// console.log(person1);
+
+
+//in conjunction with html/css
+
+console.log(document.getElementById('my-form'));
+//single element selectors
+
+
+
+
+
+//multi element 
 
 
 

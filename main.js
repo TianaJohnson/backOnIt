@@ -40,23 +40,23 @@
 // person.email = " john@gmail.com";
 
 // console.log( person)
-const toDos = [
-    {
-        id: 1,
-        text: 'Take out trash',
-        isCompleted: true,
-        },
-    {
-        id: 2,
-        text: 'Clean litter box',
-        isCompleted: false,
-        },
-     {
-        id: 3,
-        text: 'make bed',
-        isCompleted: true,
-     }
-];
+// const toDos = [
+//     {
+//         id: 1,
+//         text: 'Take out trash',
+//         isCompleted: true,
+//         },
+//     {
+//         id: 2,
+//         text: 'Clean litter box',
+//         isCompleted: false,
+//         },
+//      {
+//         id: 3,
+//         text: 'make bed',
+//         isCompleted: true,
+//      }
+// ];
 
 // console.log(toDos[1].text)
 
@@ -95,14 +95,47 @@ const toDos = [
 // console.log(todoText)
 
 //filter
-const todoCompleted= toDos.filter(function(todo){
-    return todo.isCompleted === true;
-}).map(function(todo) {
-    return todo.text;
-})
-console.log(todoCompleted);
+// const todoCompleted= toDos.filter(function(todo){
+//     return todo.isCompleted === true;
+// }).map(function(todo) {
+//     return todo.text;
+// })
+// console.log(todoCompleted);
+
+//if conditional
+// const x = 2;
+// const y = 15;
+
+// if( x > 5 && y > 10){   // == only equals value not data type === is data type( more accurate)
+//     console.log(' x is more than 5 or y is more than 10')
+// } else {
+//     console.log('Nope')
+// }
 
 
+//turnery operator
+const x =  13;
+// // if x is greater than 10 then set the color to red, or else set it to blue
+const color = x > 10 ? 'red' : 'blue';
+
+//switch
+switch(color){
+    case 'red':
+        console.log('Color is red');
+        break;
+    case 'blue':
+        console.log('Color is blue');
+        break;
+    default:
+        console.log('Color is not red or blue')
+}
+
+// functions
+function addNums( num1, num2){
+    console.log(num1 + num2)
+};
+
+addNums(4,8);
 
 
 

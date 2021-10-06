@@ -58,6 +58,8 @@
 //      }
 // ];
 
+// toDos.forEach((todo) => console.log(todo));
+
 // console.log(toDos[1].text)
 
 // const todoJSON = JSON.stringify(toDos);
@@ -131,11 +133,38 @@
 // }
 
 // functions
-function addNums( num1 = 1, num2 = 1){
-    return num1 + num2
-};
+// function addNums( num1 = 1, num2 = 1){
+//     return num1 + num2
+// };
 
-console.log(addNums(5,3));
+// console.log(addNums(5,3));
+
+//arrow functions // removed brackets 
+// const addNums = ( num1 = 1, num2 = 1) => num1 + num2
+
+// console.log(addNums(5,5));
+
+//object oriented programing 
+// Constructor function
+
+function Person(firstName, lastName, dob){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob);
+    this.getBirthYear = function(){
+        return this.dob.getFullYear();
+    }
+    this.getFullName = function(){
+        return `${this.firstName} ${this.lastName}`
+    }
+
+}
+// Instantiate object
+const person1 = new Person('John', 'Doe', '07/08/1986');
+const person2 = new Person('Paul', 'Ridge', '6/6/2020');
+
+console.log(person1.getBirthYear())
+console.log(person2.getFullName())
 
 
 

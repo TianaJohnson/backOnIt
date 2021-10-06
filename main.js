@@ -114,28 +114,28 @@
 
 
 //turnery operator
-const x =  13;
-// // if x is greater than 10 then set the color to red, or else set it to blue
-const color = x > 10 ? 'red' : 'blue';
+// const x =  13;
+// // // if x is greater than 10 then set the color to red, or else set it to blue
+// const color = x > 10 ? 'red' : 'blue';
 
-//switch
-switch(color){
-    case 'red':
-        console.log('Color is red');
-        break;
-    case 'blue':
-        console.log('Color is blue');
-        break;
-    default:
-        console.log('Color is not red or blue')
-}
+// //switch
+// switch(color){
+//     case 'red':
+//         console.log('Color is red');
+//         break;
+//     case 'blue':
+//         console.log('Color is blue');
+//         break;
+//     default:
+//         console.log('Color is not red or blue')
+// }
 
 // functions
-function addNums( num1, num2){
-    console.log(num1 + num2)
+function addNums( num1 = 1, num2 = 1){
+    return num1 + num2
 };
 
-addNums(4,8);
+console.log(addNums(5,3));
 
 
 

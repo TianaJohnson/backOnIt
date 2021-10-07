@@ -189,11 +189,10 @@
 
 //in conjunction with html/css
 
-console.log(document.getElementById('my-form'));
 //single element selectors
 
-
-
+console.log(document.getElementById('my-form'));
+console.log(document.querySelector('.container'));
 
 
 //multi element 

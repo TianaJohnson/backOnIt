@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/TianaJohnson/backOnIt/issues"
   },
-  "homepage": "https://github.com/TianaJohnson/backOnIt#readme"
+  "homepage": "https://github.com/TianaJohnson/backOnIt#readme",
+  "dependencies": {
+    "uuid": "^8.3.2"
+  }
 }

@@ -214,11 +214,26 @@
 // const btn = document.querySelector('.btn');
 // btn.style.background = 'red';
 
-const btn = document.querySelector('.btn');
-btn.addEventListener('click', (e) => {
-    e.preventDefault(); /// prevents default behavior
-    console.log(e.target.className);
-});
+const myForm = document.querySelector('#my-form');
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const msg = document.querySelector('.msg');
+const userList = document.querySelector('#user');
+
+myForm.addEventListener('submit', onSubmit);
+
+function onSubmit(e) { 
+    e.preventDefault();
+    if(nameInput.value === '' || emailInput.value === ''){
+        msg.classList.add('error');
+        msg.innerHTML = ' Please enter all fields'
+
+        setTimeout(() => msg.remove(), 3000);  // removes error message after 3 seconds
+
+    } else {
+        console.log('success');
+    }
+}
 
 
 

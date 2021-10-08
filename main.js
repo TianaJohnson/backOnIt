@@ -198,7 +198,27 @@
 
 // console.log(document.querySelectorAll('.item'))
 // console.log(document.getElementsByClassName('item'))
+// console.log(document.getElementsByTagName('li'))
 
+// const items = document.querySelectorAll('.item');
+// items.forEach((item => console.log(item)));
+
+// const ul = document.querySelector('.items');
+
+// ul.remove();
+// ul.lastElementChild.remove();
+// ul.firstElementChild.textContent= 'Hello';
+// ul.children[1].innerText = 'Brad';
+// ul.lastElementChild.innerHTML = '<h4> hello </h4>';
+
+// const btn = document.querySelector('.btn');
+// btn.style.background = 'red';
+
+const btn = document.querySelector('.btn');
+btn.addEventListener('click', (e) => {
+    e.preventDefault(); /// prevents default behavior
+    console.log(e.target.className);
+});
 
 
 

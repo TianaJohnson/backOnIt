@@ -218,7 +218,7 @@ const myForm = document.querySelector('#my-form');
 const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
 const msg = document.querySelector('.msg');
-const userList = document.querySelector('#user');
+const userList = document.querySelector('#users');
 
 myForm.addEventListener('submit', onSubmit);
 
@@ -229,9 +229,15 @@ function onSubmit(e) {
         msg.innerHTML = ' Please enter all fields'
 
         setTimeout(() => msg.remove(), 3000);  // removes error message after 3 seconds
-
     } else {
-        console.log('success');
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(`${nameInput.value} : ${emailInput.value}`));
+
+        userList.appendChild(li);
+
+        //clear the fields
+        nameInput.value = '';
+        emailInput.value = '';
     }
 }
 
